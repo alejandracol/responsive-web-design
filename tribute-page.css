@@ -1,0 +1,126 @@
+  :root {
+    --margin-tribute-info: 0 2.5% 0 2.5%;
+    }
+
+  html {
+    font-size: 10px;
+  }
+  
+  body {
+    margin: 40px 40px 40px 40px;
+    font-family: 'Comic Neue', 'Segoe UI';
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 1000px) {
+    body {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  }
+  
+  header {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  
+  #image { 
+    max-width: 100%; 
+    height: auto;
+    }
+  
+  .img-caption {
+    font-size: 1.5rem;
+    color: rgb(70, 70, 70);
+  }
+  
+  #tribute-info {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-areas:
+      "abst bloc"
+      "cont figu"
+      "cont .";
+    background-color: #EFE0E0;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 1000px) {
+    #tribute-info {
+      grid-template-columns: minmax(300px, 100%);
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+      "abst"
+      "cont"
+      "bloc"
+      "figu";
+    }
+  }
+  
+  #abstract {
+    grid-area: abst;
+    margin: var(--margin-tribute-info);
+  }
+  
+  #content {
+    grid-area: cont;
+    margin: var(--margin-tribute-info);
+  }
+  
+  li {
+    padding-bottom: 1rem;
+  }
+  
+  blockquote {
+    grid-area: bloc;
+    margin: var(--margin-tribute-info);
+    font-family: 'dancing Script';
+    font-size: 2.45rem;
+  }
+
+  @media (max-width: 1000px) {
+    blockquote {
+      font-size: 2rem;
+    }
+  }
+  
+  figure {
+    grid-area: figu;
+    text-align: center;
+    align-self: center;
+  }
+  
+  #image2 { 
+    width: 220px; 
+    height: auto;
+    }
+  
+  footer {
+    position: relative;
+    top: -100px;
+    float: right;;
+    padding: 2rem 4rem 4rem 1rem;
+  }
+
+  @media (max-width: 1000px) {
+    footer {
+      top: auto;
+    }
+  }
+  
+  sup {
+     font-size: 15px;
+  }
+  
+  .tribute-link {
+    font-weight: bold;
+  }
+
+  .tribute-link:hover {
+    color: blue;
+    background-color: rgba(45, 45, 45, 0.1);
+  }
+  
+  
